@@ -30,18 +30,32 @@ body{font-family:'Inter',sans-serif;background:var(--crema);color:var(--texto);o
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;transition:all 0.4s}
-nav.top{background:transparent;border-bottom:1px solid transparent}
+nav.top{background:var(--crema);border-bottom:1px solid rgba(139,26,26,0.10)}
 nav.scrolled{background:rgba(74,8,8,0.97);border-bottom:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(12px)}
+/* ── NAV COLOR STATES ── */
 nav.top .nav-logo-main{color:var(--rojo)}
-nav.top .nav-logo-sub{color:rgba(139,26,26,0.5)}
-nav.top .nav-links a{color:rgba(139,26,26,0.75)}
-nav.top .nav-links a:hover{color:var(--rojo)}
+nav.top .nav-logo-sub{color:rgba(139,26,26,0.55)}
+nav.top .nav-links a{color:rgba(74,8,8,0.72)}
 nav.top .nav-links a::after{background:var(--rojo)}
-nav.top .nav-brand-seal{border-color:rgba(139,26,26,0.25)}
+nav.top .nav-links a:hover{color:var(--rojo)}
+nav.top .nav-brand-seal{border-color:rgba(139,26,26,0.28)}
 nav.top .hamburger span{background:var(--rojo)}
+nav.scrolled .nav-logo-main{color:var(--blanco)}
+nav.scrolled .nav-logo-sub{color:rgba(255,255,255,0.45)}
+nav.scrolled .nav-links a{color:rgba(255,255,255,0.7)}
+nav.scrolled .nav-links a::after{background:var(--blanco)}
+nav.scrolled .nav-links a:hover{color:var(--blanco)}
+nav.scrolled .nav-brand-seal{border-color:rgba(255,255,255,0.3)}
+nav.scrolled .hamburger span{background:var(--blanco)}
+/* ── LOGO CROSSFADE ── */
+.nav-logo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:3px;transition:opacity 0.4s}
+nav.top .logo-dark{opacity:1}
+nav.top .logo-light{opacity:0}
+nav.scrolled .logo-dark{opacity:0}
+nav.scrolled .logo-light{opacity:1}
 .nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px;padding:0 2rem}
 .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.nav-brand-seal{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.nav-brand-seal{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.3);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .nav-brand-text{display:flex;flex-direction:column;gap:1px}
 .nav-logo-main{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--blanco);letter-spacing:0.08em;text-transform:uppercase;line-height:1}
 .nav-logo-sub{font-size:8px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:500}
@@ -198,7 +212,7 @@ nav.scrolled .nav-nandu{color:#F1DFC0}
 .tabla-collage img:first-child{grid-column:1/-1;height:210px}
 .tabla-collage img:not(:first-child){height:140px}
 .tabla-precio-label{font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:8px;display:block}
-.tabla-precio{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--blanco);display:block;line-height:1;margin-bottom:6px}
+.tabla-precio{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--blanco);display:block;line-height:1;margin-bottom:6px}
 .tabla-precio-note{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.08em;text-transform:uppercase}
 .tabla-contenido h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--blanco);font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.5rem;line-height:1.1}
 .tabla-subtitle{font-size:15px;color:rgba(255,255,255,0.5);margin-bottom:2rem;font-style:italic;font-family:'Cormorant Garamond',serif}
@@ -265,7 +279,8 @@ nav.scrolled .nav-nandu{color:#F1DFC0}
 .contacto-socials{display:flex;gap:1rem;justify-content:center;margin-top:2.5rem;flex-wrap:wrap}
 .social-btn{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);text-decoration:none;padding:11px 22px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.2s;font-weight:500}
 .social-btn:hover{background:rgba(255,255,255,0.14);color:var(--blanco)}
-.mapa-wrap{margin-top:4rem;border-top:1px solid rgba(255,255,255,0.1);overflow:hidden;height:380px;position:relative}
+.mapa-wrap{overflow:hidden;height:380px;position:relative}
+.mapas-grid{margin-top:4rem;border-top:1px solid rgba(255,255,255,0.1);display:grid;grid-template-columns:1fr 1fr;gap:2px}
 .mapa-wrap iframe{width:100%;height:100%;border:none;filter:saturate(0.15) brightness(0.45) hue-rotate(320deg)}
 .mapa-label{position:absolute;bottom:1.25rem;left:1.25rem;background:rgba(74,8,8,0.95);color:rgba(255,255,255,0.8);padding:0.65rem 1.1rem;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;border-left:2px solid rgba(255,255,255,0.2)}
 
@@ -324,6 +339,8 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
   .galeria-item:first-child{grid-column:span 1;aspect-ratio:1}
   .tabla-collage img:first-child{height:160px}
   .tabla-collage img:not(:first-child){height:105px}
+  .mapas-grid{grid-template-columns:1fr}
+  .mapa-wrap{height:300px}
 }
 @media(prefers-reduced-motion:reduce){
   .fade-up{opacity:1;transform:none;transition:none}
@@ -338,7 +355,10 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
 <nav id="nav" class="top">
   <div class="nav-inner">
     <a href="#inicio" class="nav-brand">
-      <div class="nav-brand-seal"><img src="imagens/logoquesocremo.png" alt="Logo Cremo Frossard" style="width:38px;height:38px;object-fit:contain;background:transparent"></div>
+      <div class="nav-brand-seal">
+        <img src="imagens/logo-bordo.png" class="nav-logo-img logo-dark" alt="Logo Cremo Frossard">
+        <img src="imagens/logo-creme.png" class="nav-logo-img logo-light" alt="" aria-hidden="true">
+      </div>
       <div class="nav-brand-text">
         <span class="nav-logo-main">Cremo Frossard</span>
         <span class="nav-logo-sub">Queso Artesanal · EST. 2000</span>
@@ -534,7 +554,7 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
         <img src="imagens/tabla1.png" alt="Tabla de quesos Cremo Frossard con variedades maduradas" class="tabla-img-big" loading="lazy">
         <div class="tabla-precio-badge">
           <span class="l">Precio por tabla</span>
-          <span class="v">150.000 Gs</span>
+          <span class="v">A consultar</span>
         </div>
         <img src="imagens/tabla2.png" alt="Tabla gourmet de quesos y acompañamientos Cremo Frossard" class="tabla-img-small" loading="lazy">
         <img src="imagens/tabla3.png" alt="Presentación de tabla de quesos artesanales Cremo Frossard" class="tabla-img-small" loading="lazy">
@@ -641,10 +661,16 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
         </a>
       </div>
     </div>
-    <div class="mapa-wrap">
-      <iframe src="https://maps.google.com/maps?q=Colonia%20Yguaz%C3%BA%2C%20Alto%20Paran%C3%A1%2C%20Paraguay&hl=es&z=13&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="mapa-label">📍 Colonia Yguazú · Alto Paraná</div>
-    </div>
+    <div class="mapas-grid">
+  <div class="mapa-wrap">
+    <iframe src="https://maps.google.com/maps?q=-25.4637876,-55.0078782&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mapa-label">📍 Planta · Colonia Yguazú</div>
+  </div>
+  <div class="mapa-wrap">
+    <iframe src="https://maps.google.com/maps?q=-25.283863,-57.5855259&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mapa-label">📍 Comercial · Asunción</div>
+  </div>
+</div>
   </div>
 </section>
 

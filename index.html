@@ -8,7 +8,7 @@
 <meta property="og:title" content="Quesos Cremo Frossard — Queso Artesanal desde el 2000">
 <meta property="og:description" content="Sabor auténtico, hecho a mano con pasión. Más de 15 variedades de quesos artesanales europeos en Paraguay.">
 <meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -60,38 +60,35 @@ nav.top .hamburger span{background:var(--rojo)}
 .mobile-menu a:hover{color:var(--blanco)}
 
 /* ── HERO ── */
-.hero{min-height:100vh;background:#F2EAD9;display:flex;align-items:center;justify-content:center;padding:0 1.5rem;position:relative;overflow:hidden}
-.hero-rings{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
-.hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(139,26,26,0.06)}
-.hero-ring:nth-child(1){width:500px;height:500px}
-.hero-ring:nth-child(2){width:700px;height:700px}
-.hero-ring:nth-child(3){width:950px;height:950px}
-.hero-bg-word{position:absolute;bottom:-40px;left:50%;transform:translateX(-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(100px,22vw,280px);font-weight:700;text-transform:uppercase;color:rgba(139,26,26,0.07);white-space:nowrap;letter-spacing:0.08em;user-select:none;pointer-events:none;line-height:1}
-.hero-content{text-align:center;max-width:780px;position:relative;z-index:1;padding-top:72px}
-.hero-seal{width:180px;height:180px;border-radius:50%;border:1px solid rgba(139,26,26,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;margin:0 auto 2.5rem;position:relative;background:rgba(139,26,26,0.04)}
-.hero-seal-bird{font-size:3.5rem;line-height:1;margin-bottom:4px}
-.hero-logo{width:180px;height:180px;min-width:180px;min-height:180px;border:3px solid rgba(139,26,26,0.4);border-radius:50%;overflow:hidden;background:transparent;padding:0;margin:0 auto;display:flex;align-items:center;justify-content:center}
-.hero-seal-top{font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(139,26,26,0.55);font-weight:600;width:100%;text-align:center}
-.hero-seal-bottom{font-size:6.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(139,26,26,0.4);font-weight:500;margin-top:3px;width:100%;text-align:center}
-.hero-est{font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(139,26,26,0.5);margin-bottom:1.25rem;display:block}
-.hero-pre{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3.5vw,28px);font-style:italic;font-weight:300;color:var(--rojo);margin-bottom:0.4rem;display:block}
-.hero-title{font-family:'Cormorant Garamond',serif;font-weight:700;text-transform:uppercase;font-size:clamp(44px,8vw,92px);color:var(--rojo);line-height:0.92;letter-spacing:0.02em;margin-bottom:1.75rem}
+.hero{--h-cream:#F1E9DA;--h-cream2:#E9DEC9;--h-maroon:#691416;--h-maroon2:#7E2A2C;--h-gold:#AE8D3C;--h-ink:#5E4B36;min-height:100vh;background:#EDE3CF;display:flex;align-items:center;justify-content:center;padding:92px 1.5rem 56px;position:relative;overflow:hidden}
+.hero-photo{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url('imagens/fundo.jpg'),linear-gradient(180deg,#F3EBDA 0%,#EDE3CF 55%,#E7DCC4 100%);background-size:cover,cover;background-position:center,center;background-repeat:no-repeat,no-repeat}
+.hero-veil{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(244,237,224,0.44) 0%,rgba(244,237,224,0.20) 34%,rgba(244,237,224,0.12) 62%,rgba(244,237,224,0.30) 100%),radial-gradient(70% 50% at 50% 32%,rgba(244,237,224,0.42) 0%,rgba(244,237,224,0) 68%)}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:780px}
+.hero-nandu{width:clamp(88px,12.5vw,150px);margin:0 auto .2rem;color:var(--h-maroon);filter:drop-shadow(0 7px 16px rgba(105,20,22,0.18))}
+.hero-nandu svg{width:100%;height:auto;display:block}
+.hero-eyebrow{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;font-family:'Inter',sans-serif;font-size:clamp(9px,1.25vw,11px);letter-spacing:0.32em;text-transform:uppercase;color:var(--h-ink);font-weight:500;margin-bottom:0.8rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';height:1px;width:clamp(22px,4.5vw,52px);background:var(--h-gold);opacity:0.65}
+.hero-title{font-family:'Cinzel',serif;font-weight:700;color:var(--h-maroon);text-transform:uppercase;font-size:clamp(46px,8.6vw,106px);line-height:0.92;letter-spacing:0.012em;margin-bottom:0.85rem;text-shadow:0 1px 0 rgba(255,255,255,0.35)}
 .hero-title span{display:block}
-.hero-subtitle{font-size:14px;color:var(--texto);line-height:2;max-width:460px;margin:0 auto 1.75rem;font-weight:300}
-.hero-credential{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(139,26,26,0.25);padding:8px 20px;border-radius:40px;margin-bottom:3rem;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(139,26,26,0.7);background:rgba(139,26,26,0.04)}
+.hero-arte{display:inline-flex;align-items:center;gap:13px;margin-bottom:1.3rem;font-family:'Cinzel',serif;font-weight:600;color:var(--h-maroon2);font-size:clamp(12px,1.6vw,17px);letter-spacing:0.26em;text-transform:uppercase}
+.swiss-shield{flex:none;height:clamp(19px,2.4vw,25px);width:auto}
 .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.hero-actions .btn-outline{border-radius:8px}
-.hero-actions .btn-wa{border-radius:8px}
-.hero-actions a{border-radius:8px}
+.hero-actions .btn-primary{background:var(--h-maroon);color:#F7F1E4;border:none;padding:15px 30px;border-radius:8px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;text-decoration:none;box-shadow:0 8px 22px rgba(105,20,22,0.22);transition:transform .2s,box-shadow .2s,background .2s}
+.hero-actions .btn-primary:hover{background:#7E2A2C;transform:translateY(-2px);box-shadow:0 12px 28px rgba(105,20,22,0.3)}
+.hero-actions .btn-wa{display:inline-flex;align-items:center;gap:9px;background:var(--verde-wa);color:#fff;padding:15px 28px;border-radius:8px;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;text-decoration:none;box-shadow:0 8px 22px rgba(37,211,102,0.28);transition:transform .2s,opacity .2s}
+.hero-actions .btn-wa:hover{opacity:0.92;transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:7px;color:rgba(94,75,54,0.45);font-family:'Inter',sans-serif;font-size:9px;letter-spacing:0.26em;text-transform:uppercase;animation:bobble 2.5s ease-in-out infinite}
+@keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+.hero-scroll-line{width:1px;height:30px;background:linear-gradient(to bottom,rgba(94,75,54,0.4),transparent)}
+.nav-nandu{color:#7E2A2C;width:24px;height:24px;display:flex;align-items:center;justify-content:center}
+nav.scrolled .nav-nandu{color:#F1DFC0}
+.nav-nandu svg{width:100%;height:100%;display:block}
 .btn-primary{background:var(--rojo);color:var(--blanco);border:none;padding:14px 32px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all 0.2s;text-decoration:none;display:inline-block}
 .btn-primary:hover{background:var(--rojo-oscuro)}
 .btn-outline{background:transparent;color:var(--blanco);border:1px solid rgba(255,255,255,0.3);padding:14px 32px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:all 0.2s;text-decoration:none;display:inline-block;border-radius:8px}
 .btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.6)}
 .btn-wa{background:var(--verde-wa);color:#fff;border:none;padding:14px 32px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:opacity 0.2s;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border-radius:8px}
 .btn-wa:hover{opacity:0.88}
-.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(139,26,26,0.3);font-size:9px;letter-spacing:0.24em;text-transform:uppercase;animation:bobble 2.5s ease-in-out infinite}
-@keyframes bobble{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
-.hero-scroll-line{width:1px;height:36px;background:linear-gradient(to bottom,rgba(139,26,26,0.2),transparent)}
 
 /* ── SECTION BASE ── */
 .section-eyebrow{font-size:9.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--rojo-texto);font-weight:600;margin-bottom:0.9rem;display:block}
@@ -251,25 +248,6 @@ nav.top .hamburger span{background:var(--rojo)}
 .tip-title{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:700;color:var(--rojo);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.6rem;line-height:1.2}
 .tip-text{font-size:12px;color:var(--texto);line-height:1.75;opacity:0.8}
 
-/* ── HORECA ── */
-.horeca{background:#0F0505;padding:7rem 1.5rem}
-.horeca-inner{max-width:1160px;margin:0 auto}
-.horeca .section-eyebrow{color:rgba(255,255,255,0.3)}
-.horeca .section-title{color:var(--blanco)}
-.horeca .section-divider{background:rgba(255,255,255,0.12)}
-.horeca-subtitle{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;color:rgba(255,255,255,0.4);margin:1.5rem 0 3rem;font-weight:300;line-height:1.4}
-.horeca-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-bottom:4rem;background:rgba(255,255,255,0.05)}
-.horeca-card{background:#0F0505;border-top:1px solid rgba(139,26,26,0.4);padding:2rem;transition:background 0.2s;border-radius:12px}
-.horeca-card:hover{background:rgba(139,26,26,0.08)}
-.horeca-card-icon{font-size:1.75rem;display:block;margin-bottom:1rem}
-.horeca-card-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--blanco);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.6rem}
-.horeca-card-text{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.75}
-.horeca-cta-wrap{text-align:center}
-.horeca-body-text{font-size:14px;color:rgba(255,255,255,0.4);line-height:2;max-width:580px;margin:0 auto 3rem;font-weight:300}
-.btn-horeca{display:inline-block;background:var(--rojo);color:var(--blanco);text-decoration:none;padding:15px 40px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;transition:background 0.2s}
-.btn-horeca:hover{background:var(--rojo-oscuro)}
-.horeca-partner{font-size:9.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.15);margin-top:1.25rem;display:block;text-align:center}
-
 /* ── CONTACTO + MAPA ── */
 .contacto{background:var(--rojo);padding:7rem 1.5rem 0}
 .contacto-inner{max-width:1160px;margin:0 auto}
@@ -323,7 +301,6 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
   .sobre-grid{grid-template-columns:1fr;gap:3rem}
   .tabla-grid{grid-template-columns:1fr;gap:3rem}
   .beneficios-grid{grid-template-columns:1fr 1fr}
-  .horeca-grid{grid-template-columns:1fr;gap:0}
   .footer-top{grid-template-columns:1fr 1fr}
   .galeria-grid{grid-template-columns:1fr 1fr}
   .galeria-item:first-child{grid-column:span 2}
@@ -345,7 +322,6 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
   .strip-inner{gap:1rem}
   .galeria-grid{grid-template-columns:1fr}
   .galeria-item:first-child{grid-column:span 1;aspect-ratio:1}
-  .horeca-grid{background:none}
   .tabla-collage img:first-child{height:160px}
   .tabla-collage img:not(:first-child){height:105px}
 }
@@ -356,6 +332,7 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="nandu-mark" viewBox="0 0 652 700"><g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none"><path d="M3960 6660 c-9 -17 -21 -20 -76 -20 c-64 0 -64 0 -174 -110 c-107 -107 -110 -111 -110 -154 c0 -35 -5 -48 -20 -56 c-19 -10 -20 -21 -20 -160 c0 -139 1 -150 20 -160 c18 -9 20 -21 20 -100 c0 -79 2 -91 20 -100 c17 -9 20 -21 20 -80 c0 -59 3 -71 20 -80 c19 -10 20 -21 20 -300 c0 -279 -1 -290 -20 -300 c-17 -9 -20 -21 -20 -80 c0 -59 -3 -71 -20 -80 c-16 -8 -20 -21 -20 -60 c0 -39 -4 -52 -20 -60 c-13 -7 -20 -21 -20 -40 c0 -19 -7 -33 -20 -40 c-13 -7 -20 -21 -20 -40 c0 -19 -7 -33 -20 -40 c-12 -7 -20 -21 -20 -38 c0 -19 -12 -37 -40 -62 c-24 -21 -40 -44 -40 -58 c0 -27 -93 -127 -109 -117 c-19 11 -13 63 9 75 c17 9 20 21 20 80 c0 59 3 71 20 80 c19 10 20 21 20 220 c0 199 -1 210 -20 220 c-17 9 -20 21 -20 80 c0 59 -3 71 -20 80 c-12 7 -20 21 -20 38 c0 19 -12 37 -40 62 c-24 21 -40 44 -40 58 c0 15 -24 47 -70 92 c-45 46 -77 70 -92 70 c-14 0 -37 16 -58 40 c-25 28 -43 40 -62 40 c-17 0 -31 8 -38 20 c-8 16 -21 20 -60 20 c-39 0 -52 4 -60 20 c-10 19 -21 20 -200 20 c-179 0 -190 -1 -200 -20 c-8 -16 -21 -20 -60 -20 c-39 0 -52 -4 -60 -20 c-6 -12 -21 -20 -36 -20 c-35 0 -244 -209 -244 -244 c0 -15 -8 -30 -20 -36 c-13 -7 -20 -21 -20 -40 c0 -19 -7 -33 -20 -40 c-19 -10 -20 -21 -20 -200 c0 -179 1 -190 20 -200 c12 -6 20 -21 20 -36 c0 -34 90 -124 124 -124 c15 0 30 -8 36 -20 c19 -35 56 -25 110 30 c50 49 50 49 50 114 c0 55 3 67 20 76 c12 6 20 21 20 36 c0 34 90 124 124 124 c15 0 30 8 36 20 c16 30 184 30 200 0 c6 -12 21 -20 36 -20 c17 0 45 -21 94 -70 c66 -65 70 -72 70 -114 c0 -35 5 -48 20 -56 c13 -7 20 -21 20 -40 c0 -19 -7 -33 -20 -40 c-17 -9 -20 -21 -20 -78 c0 -66 -1 -68 -40 -102 c-25 -22 -40 -44 -40 -58 c0 -32 -91 -122 -124 -122 c-15 0 -30 -8 -36 -20 c-7 -13 -21 -20 -40 -20 c-19 0 -33 -7 -40 -20 c-9 -18 -21 -20 -100 -20 c-79 0 -91 -2 -100 -20 c-8 -16 -21 -20 -60 -20 c-39 0 -52 -4 -60 -20 c-6 -12 -21 -20 -36 -20 c-19 0 -43 -17 -84 -60 c-36 -37 -66 -60 -80 -60 c-29 0 -80 -52 -80 -82 c0 -14 -15 -36 -40 -58 c-28 -25 -40 -43 -40 -62 c0 -17 -8 -31 -20 -38 c-16 -8 -20 -21 -20 -60 c0 -39 -4 -52 -20 -60 c-16 -8 -20 -21 -20 -60 c0 -39 -4 -52 -20 -60 c-17 -9 -20 -21 -20 -80 c0 -59 -3 -71 -20 -80 c-19 -10 -20 -21 -20 -160 c0 -140 1 -150 21 -160 c15 -9 19 -19 17 -43 c-3 -32 -3 -32 -72 -35 c-68 -3 -68 -3 -105 37 c-23 25 -47 40 -66 43 c-26 3 -30 8 -33 35 c-2 20 -11 37 -23 43 c-12 7 -19 21 -19 40 c0 19 -7 33 -20 40 c-16 8 -20 21 -20 60 c0 39 -4 52 -20 60 c-19 10 -20 21 -20 360 c0 339 -1 350 -20 360 c-16 8 -20 21 -20 60 c0 39 -4 52 -20 60 c-16 8 -20 21 -20 60 c0 39 -4 52 -20 60 c-12 6 -20 21 -20 36 c0 35 -169 204 -204 204 c-15 0 -30 8 -36 20 c-7 13 -21 20 -40 20 c-19 0 -33 7 -40 20 c-16 30 -224 30 -240 0 c-7 -13 -21 -20 -40 -20 c-19 0 -33 -7 -40 -20 c-6 -12 -21 -20 -36 -20 c-34 0 -124 -90 -124 -124 c0 -15 -8 -30 -20 -36 c-16 -8 -20 -21 -20 -60 c0 -39 -4 -52 -20 -60 c-30 -16 -30 -184 0 -200 c12 -6 20 -21 20 -36 c0 -43 50 -84 104 -84 c35 0 48 5 56 20 c9 18 21 20 100 20 c79 0 91 -2 100 -20 c6 -12 21 -20 36 -20 c34 0 124 -90 124 -124 c0 -15 8 -30 20 -36 c16 -8 20 -21 20 -60 c0 -39 4 -52 20 -60 c19 -10 20 -21 20 -360 c0 -339 1 -350 20 -360 c18 -9 20 -21 20 -100 c0 -79 2 -91 20 -100 c16 -8 20 -21 20 -60 c0 -39 4 -52 20 -60 c12 -7 20 -21 20 -38 c0 -19 12 -37 40 -62 c24 -21 40 -44 40 -58 c0 -33 251 -282 284 -282 c15 0 30 -8 36 -20 c7 -13 21 -20 40 -20 c19 0 33 -7 40 -20 c7 -13 21 -20 40 -20 c19 0 33 -7 40 -20 c10 -18 21 -20 120 -20 c99 0 110 -2 120 -20 c10 -18 21 -20 140 -20 c119 0 130 -2 140 -20 c8 -16 21 -20 60 -20 c39 0 52 -4 60 -20 c7 -12 21 -20 38 -20 c19 0 37 -12 62 -40 c22 -25 44 -40 58 -40 c31 0 122 -91 122 -122 c0 -14 15 -36 40 -58 c28 -25 40 -43 40 -62 c0 -17 8 -31 20 -38 c16 -8 20 -21 20 -60 c0 -39 4 -52 20 -60 c16 -8 20 -21 20 -60 c0 -39 4 -52 20 -60 c19 -10 20 -23 22 -523 l3 -512 235 0 235 0 3 432 c2 420 3 433 22 443 c18 9 20 21 20 100 c0 79 2 91 20 100 c12 7 20 21 20 38 c0 19 12 37 40 62 c25 22 40 44 40 58 c0 30 51 82 80 82 c14 0 50 29 100 80 c50 51 86 80 100 80 c14 0 50 29 100 80 c73 74 81 80 120 80 c36 0 47 -6 90 -50 c45 -44 50 -53 50 -94 c0 -35 5 -48 20 -56 c13 -7 20 -21 20 -40 c0 -19 7 -33 20 -40 c12 -7 20 -21 20 -37 c0 -18 13 -38 39 -62 c25 -23 40 -47 43 -66 c3 -26 8 -30 35 -33 c20 -2 37 -11 43 -23 c7 -12 21 -19 40 -19 c19 0 33 -7 40 -20 c16 -30 224 -30 240 0 c6 12 21 20 36 20 c17 0 45 21 94 70 c66 65 70 72 70 114 c0 35 5 48 20 56 c30 16 30 184 0 200 c-13 7 -20 21 -20 40 c0 19 -7 33 -20 40 c-12 6 -20 21 -20 36 c0 19 -30 55 -120 144 c-84 83 -120 126 -120 142 c0 14 -15 36 -40 58 c-26 22 -40 44 -40 59 c0 15 -15 37 -41 61 c-46 41 -45 60 1 60 c19 0 33 -7 40 -20 c7 -12 21 -20 38 -20 c19 0 37 -12 62 -40 c31 -35 40 -40 80 -40 c40 0 49 -5 80 -40 c31 -36 40 -40 82 -40 c37 0 50 -4 58 -20 c7 -13 21 -20 40 -20 c19 0 33 -7 40 -20 c8 -16 21 -20 60 -20 c39 0 52 -4 60 -20 c10 -19 21 -20 220 -20 c199 0 210 1 220 20 c7 12 21 20 38 20 c19 0 37 12 62 40 c22 25 44 40 58 40 c32 0 82 52 82 84 c0 15 8 30 20 36 c13 7 20 21 20 40 c0 19 7 33 20 40 c19 10 20 21 20 160 c0 139 -1 150 -20 160 c-12 6 -20 21 -20 36 c0 35 -129 164 -164 164 c-15 0 -30 8 -36 20 c-8 16 -21 20 -60 20 c-39 0 -52 4 -60 20 c-7 13 -21 20 -40 20 c-19 0 -33 -7 -40 -20 c-10 -19 -21 -20 -260 -20 c-239 0 -250 1 -260 20 c-9 17 -21 20 -78 20 c-55 0 -71 4 -85 20 c-10 12 -29 20 -48 20 c-24 0 -30 4 -27 18 c3 15 24 17 235 20 c220 2 233 3 243 22 c9 18 21 20 100 20 c79 0 91 2 100 20 c8 16 21 20 60 20 c39 0 52 4 60 20 c9 17 21 20 80 20 c59 0 71 3 80 20 c7 13 21 20 40 20 c19 0 33 7 40 20 c8 16 21 20 60 20 c39 0 52 4 60 20 c6 12 21 20 36 20 c19 0 46 21 103 79 c56 57 86 80 107 83 c24 2 30 8 32 33 c3 19 18 43 43 66 c26 24 39 44 39 62 c0 16 8 30 20 37 c17 9 20 21 20 80 c0 59 3 71 20 80 c17 9 20 21 20 80 c0 59 -3 71 -20 80 c-16 8 -20 21 -20 57 c0 41 -4 50 -39 82 c-25 23 -40 47 -43 66 c-3 26 -8 30 -35 33 c-20 2 -37 11 -43 23 c-7 12 -21 19 -40 19 c-19 0 -33 7 -40 20 c-9 18 -21 20 -100 20 c-79 0 -91 -2 -100 -20 c-8 -16 -21 -20 -56 -20 c-43 0 -50 -4 -104 -60 c-37 -38 -66 -60 -80 -60 c-14 0 -43 -22 -80 -60 c-37 -38 -66 -60 -80 -60 c-14 0 -43 -22 -80 -60 c-41 -43 -65 -60 -84 -60 c-15 0 -30 -8 -36 -20 c-7 -12 -21 -20 -38 -20 c-19 0 -37 -12 -62 -40 c-25 -28 -43 -40 -62 -40 c-17 0 -31 -8 -38 -20 c-8 -16 -21 -20 -60 -20 c-39 0 -52 -4 -60 -20 c-9 -17 -21 -20 -80 -20 c-59 0 -71 -3 -80 -20 c-9 -17 -21 -20 -92 -20 c-70 0 -85 -3 -105 -22 c-28 -26 -46 -14 -41 28 c3 27 7 29 56 34 c36 4 57 11 63 23 c6 10 22 17 39 17 c19 0 33 7 40 20 c7 13 21 20 40 20 c19 0 33 7 40 20 c7 13 21 20 40 20 c19 0 33 7 40 20 c7 12 21 20 38 20 c19 0 37 12 62 40 c23 26 44 40 60 40 c16 0 37 14 60 40 c23 26 44 40 60 40 c16 0 37 14 60 40 c21 24 44 40 58 40 c30 0 322 290 322 321 c0 13 24 44 60 79 c40 38 60 66 60 81 c0 15 15 37 40 59 c28 25 40 43 40 62 c0 17 8 31 20 38 c13 7 20 21 20 40 c0 19 7 33 20 40 c16 8 20 21 20 60 c0 39 4 52 20 60 c17 9 20 21 20 80 c0 59 3 71 20 80 c16 8 20 21 20 60 c0 39 -4 52 -20 60 c-18 9 -20 21 -20 100 c0 79 -2 91 -20 100 c-12 6 -20 21 -20 36 c0 17 -21 45 -70 94 c-49 49 -77 70 -94 70 c-15 0 -30 8 -36 20 c-10 18 -21 20 -140 20 c-119 0 -130 -2 -140 -20 c-7 -13 -21 -20 -40 -20 c-19 0 -33 -7 -40 -20 c-6 -12 -21 -20 -36 -20 c-32 0 -84 -50 -84 -82 c0 -14 -15 -36 -40 -58 c-28 -25 -40 -43 -40 -62 c0 -17 -8 -31 -20 -38 c-13 -7 -20 -21 -20 -40 c0 -19 -7 -33 -20 -40 c-16 -8 -20 -21 -20 -60 c0 -39 -4 -52 -20 -60 c-13 -7 -20 -21 -20 -40 c0 -19 -7 -33 -20 -40 c-12 -7 -20 -21 -20 -38 c0 -19 -12 -37 -40 -62 c-28 -25 -40 -43 -40 -62 c0 -17 -8 -31 -20 -38 c-12 -6 -20 -21 -20 -36 c0 -19 -17 -43 -60 -84 c-38 -36 -60 -66 -60 -80 c0 -14 -28 -49 -79 -99 c-57 -56 -80 -86 -83 -107 c-3 -25 -8 -30 -38 -34 c-30 -4 -35 -9 -38 -34 c-4 -35 -52 -86 -82 -86 c-14 0 -56 -35 -120 -100 c-68 -69 -106 -100 -122 -100 c-14 0 -36 -15 -58 -40 c-24 -28 -43 -40 -62 -40 c-18 0 -29 -7 -33 -20 c-3 -11 -15 -20 -26 -20 c-12 0 -19 7 -19 20 c0 11 4 20 10 20 c20 0 150 139 150 161 c0 13 23 44 60 79 c43 41 60 65 60 84 c0 15 8 30 20 36 c12 7 20 21 20 38 c0 19 12 37 40 62 c28 25 40 43 40 62 c0 17 8 31 20 38 c13 7 20 21 20 40 c0 19 7 33 20 40 c13 7 20 21 20 40 c0 19 7 33 20 40 c16 8 20 21 20 60 c0 39 4 52 20 60 c13 7 20 21 20 40 c0 19 7 33 20 40 c17 9 20 21 20 80 c0 59 3 71 20 80 c17 9 20 21 20 80 c0 59 3 71 20 80 c18 10 20 21 20 120 c0 99 2 110 20 120 c19 10 20 21 20 180 c0 159 -1 170 -20 180 c-18 9 -20 21 -20 100 c0 79 -2 91 -20 100 c-16 8 -20 21 -20 60 c0 39 -4 52 -20 60 c-12 7 -20 21 -20 38 c0 19 -12 37 -40 62 c-25 22 -40 44 -40 58 c0 32 -52 82 -84 82 c-15 0 -30 8 -36 20 c-7 13 -21 20 -40 20 c-19 0 -33 7 -40 20 c-8 16 -21 20 -60 20 c-39 0 -52 4 -60 20 c-7 13 -21 20 -40 20 c-19 0 -33 -7 -40 -20z"/></g></symbol></svg>
 
 <!-- NAV -->
 <nav id="nav" class="top">
@@ -373,7 +350,6 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
       <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#tabla">Tablas</a></li>
       <li><a href="#recetas">Recetas</a></li>
-      <li><a href="#horeca">HORECA</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
     <a href="https://wa.me/595985423602" class="nav-wa" target="_blank">
@@ -393,47 +369,25 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
   <a href="#catalogo" onclick="toggleMenu()">Catálogo</a>
   <a href="#tabla" onclick="toggleMenu()">Tablas</a>
   <a href="#recetas" onclick="toggleMenu()">Recetas</a>
-  <a href="#horeca" onclick="toggleMenu()">HORECA</a>
   <a href="#contacto" onclick="toggleMenu()">Contacto</a>
   <a href="https://wa.me/595985423602" target="_blank" style="color:#25D366;border-color:rgba(37,211,102,0.15)">WhatsApp: 0985-423-602</a>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero-rings">
-    <div class="hero-ring"></div>
-    <div class="hero-ring"></div>
-    <div class="hero-ring"></div>
-  </div>
-  <div class="hero-bg-word">QUESO</div>
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
   <div class="hero-content">
-    <div class="hero-seal">
-      <div class="hero-seal-top">Cremo Frossard</div>
-      <div class="hero-seal-bird hero-logo"><img src="imagens/logoquesocremo.png" alt="Logo Cremo Frossard" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"></div>
-      <div class="hero-seal-bottom">Queso Artesanal</div>
-    </div>
-    <span class="hero-est">EST. 2000 · Colonia Yguazú, Paraguay</span>
-    <span class="hero-pre">Sabor auténtico,</span>
-    <h1 class="hero-title">
-      <span>Hecho a mano</span>
-      <span>con pasión.</span>
-    </h1>
-    <p class="hero-subtitle">Más de 15 variedades de quesos artesanales europeos, elaborados con recetas de maestros queseros suizos en el corazón del Alto Paraná.</p>
-    <div class="hero-credential">
-      🇨🇭 &nbsp;Visitados por el Embajador de Suiza en Paraguay · 2025
-    </div>
+    <div class="hero-nandu"><svg viewBox="0 0 652 700" role="img" aria-label="Ñandú Cremo Frossard"><use href="#nandu-mark"/></svg></div>
+    <span class="hero-eyebrow">EST. 2000 · Colonia Yguazú, Paraguay</span>
+    <h1 class="hero-title"><span>Cremo</span><span>Frossard</span></h1>
+    <div class="hero-arte"><svg class="swiss-shield" viewBox="0 0 20 24" role="img" aria-label="Suiza"><path d="M2 1.5 H18 V13 C18 18.6 14.2 21.6 10 23.2 C5.8 21.6 2 18.6 2 13 Z" fill="#691416"/><path d="M9 6 H11 V9 H14 V11 H11 V14 H9 V11 H6 V9 H9 Z" fill="#F7F1E4"/></svg><span>Quesos Artesanales</span></div>
     <div class="hero-actions">
-      <a href="#catalogo" class="btn-primary" style="border-radius:8px">Ver catálogo</a>
-      <a href="https://wa.me/595985423602" class="btn-wa" target="_blank">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Pedir por WhatsApp
-      </a>
+      <a href="#catalogo" class="btn-primary">Ver catálogo</a>
+      <a href="https://wa.me/595985423602" class="btn-wa" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir por WhatsApp</a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="hero-scroll-line"></div>
-  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
 </section>
 
 <!-- STRIP -->
@@ -545,7 +499,7 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
         <div class="queso-card"><div class="queso-thumb"><img src="imagens/appenzeller.png" alt="Appenzeller" loading="lazy"><span class="queso-badge">Suizo</span></div><div class="queso-body"><div class="queso-tipo">Queso suizo de corteza lavada</div><div class="queso-nombre">Appenzeller</div><div class="queso-desc">Queso suizo auténtico, sabor intenso y carácter único. Elaborado con receta original de los Alpes.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20el%20Appenzeller" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
         <div class="queso-card"><div class="queso-thumb"><img src="imagens/camembert.png" alt="Camembert" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Queso de corteza florida francesa</div><div class="queso-nombre">Camembert</div><div class="queso-desc">"Protagonista en frío." Cremoso, suave y elegante. Eleva cualquier tabla o ensalada gourmet.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20pedir%20Camembert" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
         <div class="queso-card"><div class="queso-thumb"><img src="imagens/brie.png" alt="Brie" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Queso de corteza florida francesa</div><div class="queso-nombre">Brie</div><div class="queso-desc">Suave y cremoso con corteza florida blanca. Perfecto en frío para tablas, ensaladas y wraps.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20el%20Brie" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
-        <div class="queso-card"><div class="queso-thumb"><img src="imagens/mozzarella.png" alt="Mozzarella" loading="lazy"><span class="queso-badge">HORECA</span></div><div class="queso-body"><div class="queso-tipo">Queso para cocina profesional</div><div class="queso-nombre">Mozzarella</div><div class="queso-desc">"Fundido perfecto." Clave en pizzas y preparaciones que requieren elasticidad y uniformidad.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20la%20Mozzarella" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
+        <div class="queso-card"><div class="queso-thumb"><img src="imagens/mozzarella.png" alt="Mozzarella" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Queso para cocina y tabla</div><div class="queso-nombre">Mozzarella</div><div class="queso-desc">"Fundido perfecto." Clave en pizzas y preparaciones que requieren elasticidad y uniformidad.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20la%20Mozzarella" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
         <div class="queso-card"><div class="queso-thumb"><img src="imagens/emmental.png" alt="Emmental" loading="lazy" style="object-position:center 65%"></div><div class="queso-body"><div class="queso-tipo">Queso alpino con agujeros</div><div class="queso-nombre">Emmental</div><div class="queso-desc">Suave y ligeramente dulce. El clásico alpino de pasta amarilla con agujeros característicos.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20el%20Emmental" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
         <div class="queso-card"><div class="queso-thumb"><img src="imagens/catupiry.png" alt="Catupiry" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Queso cremoso brasileño</div><div class="queso-nombre">Catupiry</div><div class="queso-desc">Cremoso y versátil. Ideal para recetas, pastas, coixinhas y empanadas.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20el%20Catupiry" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
         <div class="queso-card"><div class="queso-thumb"><img src="imagens/quesofreco.png" alt="Queso fresco" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Queso fresco sin aditivos</div><div class="queso-nombre">Queso fresco</div><div class="queso-desc">Elaboración propia. Fresco, sin aditivos. Máximo 7 días de conservación. El sabor más puro.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Hola!%20Quiero%20consultar%20por%20el%20queso%20fresco" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
@@ -559,7 +513,7 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
     <div class="cat-content" id="cat-blandos"><div class="cat-grid">
       <div class="queso-card"><div class="queso-thumb"><img src="imagens/camembert.png" alt="Camembert" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Corteza florida</div><div class="queso-nombre">Camembert</div><div class="queso-desc">"Protagonista en frío." Cremoso, elegante.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Camembert" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
       <div class="queso-card"><div class="queso-thumb"><img src="imagens/brie.png" alt="Brie" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Corteza florida</div><div class="queso-nombre">Brie</div><div class="queso-desc">Suave y cremoso con corteza florida blanca. Eleva ensaladas, tablas y propuestas gourmet.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Brie" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
-      <div class="queso-card"><div class="queso-thumb"><img src="imagens/mozzarella.png" alt="Mozzarella" loading="lazy"><span class="queso-badge">HORECA</span></div><div class="queso-body"><div class="queso-tipo">Para cocina profesional</div><div class="queso-nombre">Mozzarella</div><div class="queso-desc">"Fundido perfecto." Clave en pizzas, elasticidad y uniformidad garantizadas.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Mozzarella" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
+      <div class="queso-card"><div class="queso-thumb"><img src="imagens/mozzarella.png" alt="Mozzarella" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Para cocina y tabla</div><div class="queso-nombre">Mozzarella</div><div class="queso-desc">"Fundido perfecto." Clave en pizzas, elasticidad y uniformidad garantizadas.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Mozzarella" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
     </div></div>
     <div class="cat-content" id="cat-frescos"><div class="cat-grid">
       <div class="queso-card"><div class="queso-thumb"><img src="imagens/quesofreco.png" alt="Queso fresco" loading="lazy"></div><div class="queso-body"><div class="queso-tipo">Sin aditivos</div><div class="queso-nombre">Queso fresco</div><div class="queso-desc">Elaboración propia artesanal. Sin aditivos. Máximo 7 días. Sabor puro y natural.</div><div class="queso-consultar">Consultá disponibilidad</div><a href="https://wa.me/595985423602?text=Queso%20fresco" class="queso-cta" target="_blank">Pedir por WhatsApp</a></div></div>
@@ -598,7 +552,7 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
           <li>Embutidos seleccionados (opcional)</li>
           <li>Chocolates premium (opcional)</li>
         </ul>
-        <a href="https://wa.me/595985423602?text=Hola!%20Quiero%20encargar%20una%20tabla%20de%20quesos%20-%20150.000%20Gs" class="btn-tabla" target="_blank">Encargar mi tabla</a>
+        <a href="https://wa.me/595982984834?text=Hola!%20Quiero%20encargar%20una%20tabla%20de%20quesos%20-%20150.000%20Gs" class="btn-tabla" target="_blank">Encargar mi tabla</a>
       </div>
     </div>
   </div>
@@ -626,10 +580,10 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
     <div class="section-divider fade-up"></div>
     <div class="recetas-grid fade-up">
       <div class="receta-card"><div class="receta-thumb"><img src="imagens/tostada.png" alt="Tostadas de brie con miel y nueces" loading="lazy"><span class="receta-tag">Aperitivo</span></div><div class="receta-body"><div class="receta-queso">Queso Brie</div><div class="receta-nombre">{Tostadas de brie<br>con miel y nueces}</div><p class="receta-desc">Pan baguette, brie en rodajas, miel y nueces picadas. La receta perfecta para compartir.</p></div></div>
-      <div class="receta-card"><div class="receta-thumb"><img src="imagens/coxinha.png" alt="Coixinhas de pollo y Katupiry" loading="lazy"><span class="receta-tag">Receta perfecta</span></div><div class="receta-body"><div class="receta-queso">Catupiry</div><div class="receta-nombre">{Coixinhas de pollo<br>y Katupiry}</div><p class="receta-desc">Pollo desmenuzado con queso cremoso en masa frita dorada. Rápida y deliciosa.</p></div></div>
+      <div class="receta-card"><div class="receta-thumb"><img src="imagens/coxinha.png" alt="Coixinhas de pollo y queso cremoso" loading="lazy"><span class="receta-tag">Receta perfecta</span></div><div class="receta-body"><div class="receta-queso">Catupiry</div><div class="receta-nombre">{Coixinhas de pollo<br>y queso cremoso}</div><p class="receta-desc">Pollo desmenuzado con queso cremoso en masa frita dorada. Rápida y deliciosa.</p></div></div>
       <div class="receta-card"><div class="receta-thumb"><img src="imagens/pasta.png" alt="Pasta cremosa con Catupiry" loading="lazy"><span class="receta-tag">Cena</span></div><div class="receta-body"><div class="receta-queso">Catupiry + Parmesano</div><div class="receta-nombre">{Pasta cremosa<br>con Catupiry}</div><p class="receta-desc">250g pasta, Catupiry, leche, mantequilla y parmesano rallado. Perfecta para los amantes del queso.</p></div></div>
       <div class="receta-card"><div class="receta-thumb"><img src="imagens/lomito.png" alt="Wrap de pollo con brie" loading="lazy"><span class="receta-tag">Almuerzo</span></div><div class="receta-body"><div class="receta-queso">Queso Brie</div><div class="receta-nombre">{Wrap de pollo<br>con brie}</div><p class="receta-desc">Pechugas a la parrilla, tortillas, Brie, espinacas frescas, nueces y salsa de miel y mostaza.</p></div></div>
-      <div class="receta-card"><div class="receta-thumb"><img src="imagens/empanada.png" alt="Empanadas de pollo con Katupiry" loading="lazy"><span class="receta-tag">Receta perfecta</span></div><div class="receta-body"><div class="receta-queso">Catupiry</div><div class="receta-nombre">{Empanadas de pollo<br>con Katupiry}</div><p class="receta-desc">Empanadas de pollo con queso Katupiry. Perfectas para compartir en familia.</p></div></div>
+      <div class="receta-card"><div class="receta-thumb"><img src="imagens/empanada.png" alt="Empanadas de pollo con queso cremoso" loading="lazy"><span class="receta-tag">Receta perfecta</span></div><div class="receta-body"><div class="receta-queso">Catupiry</div><div class="receta-nombre">{Empanadas de pollo<br>con queso cremoso}</div><p class="receta-desc">Empanadas de pollo con queso queso cremoso. Perfectas para compartir en familia.</p></div></div>
       <div class="receta-card"><div class="receta-thumb"><img src="imagens/quesoyfrutas.png" alt="Pequeña guía: quesos y frutas" loading="lazy"><span class="receta-tag">Guía</span></div><div class="receta-body"><div class="receta-queso">Emmental + Otros</div><div class="receta-nombre">{Pequeña guía:<br>quesos + frutas}</div><p class="receta-desc">La guía perfecta para maridajes. Queso y frutas que despiertan todos los sentidos.</p></div></div>
     </div>
   </div>
@@ -650,26 +604,6 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
   </div>
 </section>
 
-<!-- HORECA -->
-<section class="horeca" id="horeca">
-  <div class="horeca-inner">
-    <span class="section-eyebrow fade-up">Canal profesional</span>
-    <h2 class="section-title fade-up">¿Sos restaurante,<br>hotel o catering?</h2>
-    <div class="section-divider fade-up"></div>
-    <p class="horeca-subtitle fade-up">"El queso no acompaña...<br>construye la experiencia gastronómica."</p>
-    <div class="horeca-grid fade-up">
-      <div class="horeca-card"><span class="horeca-card-icon">🍕</span><div class="horeca-card-title">Mozzarella</div><p class="horeca-card-text">Fundido perfecto. Clave en pizzas y preparaciones que requieren elasticidad y uniformidad.</p></div>
-      <div class="horeca-card"><span class="horeca-card-icon">🧀</span><div class="horeca-card-title">Brie y Camembert</div><p class="horeca-card-text">Protagonistas en frío. Elevan ensaladas, tablas y propuestas gourmet para tu carta.</p></div>
-      <div class="horeca-card"><span class="horeca-card-icon">🏔️</span><div class="horeca-card-title">Gruyère</div><p class="horeca-card-text">El queso alpino por excelencia. Ideal para fondues, gratinados y platos con carácter europeo.</p></div>
-    </div>
-    <div class="horeca-cta-wrap fade-up">
-      <p class="horeca-body-text">Trabajamos con hoteles, restaurantes y caterings de Paraguay para llevar la autenticidad de nuestros quesos artesanales a cada plato. Consultá por presentaciones especiales y volúmenes para tu cocina profesional.</p>
-      <a href="https://wa.me/595985423602?text=Hola!%20Soy%20del%20canal%20HORECA%20y%20me%20interesa%20trabajar%20con%20Cremo%20Frossard" class="btn-horeca" target="_blank">Consultá para tu negocio</a>
-      <span class="horeca-partner">Alianza estratégica con horeca.py · suizaparaguay 🇨🇭</span>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACTO -->
 <section class="contacto" id="contacto">
   <div class="contacto-inner">
@@ -685,8 +619,8 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
         Escribinos ahora
       </a>
       <div class="contacto-info">
-        <div class="contacto-info-item"><span class="ico">📍</span>Dr. Bestard 289, casi Pedro Ballota, Asunción, Paraguay 1209</div>
-        <div class="contacto-info-item"><span class="ico">🏭</span>Planta: Colonia Yguazú, Alto Paraná, Paraguay</div>
+        <div class="contacto-info-item"><span class="ico">📍</span><a href="https://maps.app.goo.gl/gYhRXNwcjp3AueCr6" target="_blank" style="color:inherit;text-decoration:none">Dr. Bestard 289, casi Pedro Ballota, Asunción</a></div>
+        <div class="contacto-info-item"><span class="ico">🏭</span><a href="https://share.google/wqd8rHFtSMP874oNy" target="_blank" style="color:inherit;text-decoration:none">Planta: Colonia Yguazú, Alto Paraná</a></div>
       </div>
       <div class="contacto-socials">
         <a href="https://www.instagram.com/quesos_cremo_frossard/" class="social-btn" target="_blank">
@@ -696,6 +630,14 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
         <a href="https://wa.me/595985423602" class="social-btn" target="_blank">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           WhatsApp
+        </a>
+      </div>
+      <div style="margin-top:2.25rem;padding:1.5rem 2rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;display:inline-flex;flex-direction:column;align-items:center;gap:0.75rem;max-width:460px;width:100%">
+        <span style="font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:rgba(255,255,255,0.3)">Contacto directo · Planta Yguazú</span>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:rgba(255,255,255,0.65)">Colonia Yguazú · Alto Paraná</span>
+        <a href="https://wa.me/595982984834?text=Hola!%20Quiero%20consultar%20sobre%20los%20quesos%20Cremo%20Frossard" target="_blank" class="btn-wa" style="display:inline-flex">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          0982-984-834 · Fábrica
         </a>
       </div>
     </div>
@@ -716,12 +658,12 @@ footer{background:#1E0404;padding:4rem 1.5rem 2rem}
         <p>Quesos artesanales elaborados con recetas suizas y leche local premium. Producción propia en Colonia Yguazú, Alto Paraná.</p>
       </div>
       <div class="footer-col"><h4>Catálogo</h4><ul><li><a href="#catalogo">Quesos madurados</a></li><li><a href="#catalogo">Quesos blandos</a></li><li><a href="#catalogo">Quesos frescos</a></li><li><a href="#tabla">Tablas armadas</a></li></ul></div>
-      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="#nosotros">Nuestra historia</a></li><li><a href="#galeria">Nuestra planta</a></li><li><a href="#horeca">Canal HORECA</a></li><li><a href="#beneficios">Beneficios</a></li></ul></div>
-      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="https://wa.me/595985423602" target="_blank">0985-423-602</a></li><li><a href="https://www.instagram.com/quesos_cremo_frossard/" target="_blank">@quesos_cremo_frossard</a></li><li><a href="#recetas">Recetas</a></li><li><a href="#tips">Tips y guías</a></li></ul></div>
+      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="#nosotros">Nuestra historia</a></li><li><a href="#galeria">Nuestra planta</a></li><li><a href="#beneficios">Beneficios</a></li></ul><h4 style="margin-top:1.5rem">Ubicaciones</h4><ul><li><a href="https://maps.app.goo.gl/gYhRXNwcjp3AueCr6" target="_blank">📍 Asunción</a></li><li><a href="https://share.google/wqd8rHFtSMP874oNy" target="_blank">🏭 Fábrica · Yguazú</a></li></ul></div>
+      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="https://wa.me/595985423602" target="_blank">Asunción: 0985-423-602</a></li><li><a href="https://wa.me/595982984834" target="_blank">Fábrica: 0982-984-834</a></li><li><a href="https://www.instagram.com/quesos_cremo_frossard/" target="_blank">@quesos_cremo_frossard</a></li><li><a href="#recetas">Recetas</a></li><li><a href="#tips">Tips y guías</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 Quesos Cremo Frossard · Colonia Yguazú, Alto Paraná, Paraguay</p>
-      <span class="footer-partners">Alianza: horeca.py · suizaparaguay 🇨🇭</span>
+      <span class="footer-partners">suizaparaguay 🇨🇭</span>
     </div>
   </div>
 </footer>
